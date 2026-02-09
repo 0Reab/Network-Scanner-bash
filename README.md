@@ -11,9 +11,9 @@ Quickly assess ports that accept TCP connection.
 
 ## Features
 
-DNS Enumeration: Uses nslookup, dig, and host commands to gather DNS information about the target.<br>
-Port Scanning: Scans a range of TCP ports on the target to identify open ports.<br>
-Logging: Outputs the results of the scan to a log file with a timestamp.<br>
+* DNS Enumeration: Uses nslookup, dig, and host commands to gather DNS information about the target.<br>
+* Port Scanning: Scans a range of TCP ports on the target to identify open ports.<br>
+* Logging: Outputs the results of the scan to a log file with a timestamp.<br>
 
 ## Usage
 
