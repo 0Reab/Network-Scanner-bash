@@ -1,10 +1,13 @@
 # Port-and-DNS-Scanner
 
+TCP connect scan via /dev/tcp.<br>
+DNS enumerations with nslookup and dig.
+
 ## Description
 
-The Port and DNS Scanner script is a Bash utility designed for basic network reconnaissance.<br>
-It performs DNS enumeration and a TCP port scan within a specified range on a given target.<br>
-This can be useful for security professionals and network administrators to quickly assess the available services on a host.
+The Port and DNS Scanner script is a Bash utility designed for basic network scanning.<br>
+Enumerate DNS and do a TCP port scan within a specified port range.<br>
+Quickly assess ports that accept TCP connection.
 
 ## Features
 
@@ -14,7 +17,7 @@ Logging: Outputs the results of the scan to a log file with a timestamp.<br>
 
 ## Usage
 
-./scanner.sh example.com 20 80<br>
+`./scanner.sh example.com 20 80`<br>
 
 Usage: `./scanner.sh <ip/hostname> <port_start> <port_end>`<br>
 * `<ip/hostname>`: The IP address or hostname of the target to scan.<br>
@@ -23,6 +26,7 @@ Usage: `./scanner.sh <ip/hostname> <port_start> <port_end>`<br>
 
 This command will scan the target example.com for open TCP ports from 20 to 80 and perform DNS enumeration.
 
-Output:
+## Output
+
 * The scan results are saved to a log file named scan_results.log in the current directory.<br>
 * The log file includes the target information, the time and date of the scan, and the results of DNS enumeration and port scanning.
